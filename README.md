@@ -182,11 +182,11 @@ The funniest part has come. Let's test our applications. For this example we're 
 ![delete champions](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/408a80b3e017089fb9e4006a037d6d67d2c71881/Screenshots/12%20-%20Delete%20all%20champions.png)
 
 
-5. Let's check the terminal log to see some internal messages. The backup service checks every 5 seconds the database state and restores the database once the corruption is detected.
+5. Let's check the terminal log to see some internal messages. The backup service checks every 5 seconds the database state and restores it once the corruption is detected.
 
 ![restore log](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/6a8dce7e206fd87db8201e57b4e1e75de4dea903/Screenshots/Succesfully%20restored.png)
 
-6. Now we can list our champions again and the list look exactly the same as the last update. But if you want to play and you are fast enough you can send a delete request and list all the champions immediately to see if it returns an empty list before the restoration (remember that you have at most five seconds):
+6. Now we can list our champions again and they look exactly the same as the last update. But if you want to play and you are fast enough, you can send a delete request and list all the champions immediately to see if it returns an empty list, before the restoration (remember that you have at most five seconds):
 
 ![list restored champions](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/6a8dce7e206fd87db8201e57b4e1e75de4dea903/Screenshots/13%20-%20restored%20champions%20automatically.png)
 
