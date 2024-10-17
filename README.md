@@ -162,9 +162,30 @@ Now it's running, well done
 
 ## Testing the service
 
+The funniest part has come. Let's test our applications. For this example we're using Insomnia, it allow us create and customize requests to test our APIs. Check the [Insomnia web page](https://insomnia.rest/) for more information.
 
 
-![Captura 1](the link here)
-Create backup
-```java
-```
+1. List all the initial champions:
+
+![list champions](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/408a80b3e017089fb9e4006a037d6d67d2c71881/Screenshots/9%20-%20list%20initial%20champions.png)
+
+
+2. Save a new champion:
+
+![cave champion](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/408a80b3e017089fb9e4006a037d6d67d2c71881/Screenshots/10%20-%20Save%20new%20Champion.png)
+
+3. List the champions with the new one (a backup is made after every update):
+
+![update list champions](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/408a80b3e017089fb9e4006a037d6d67d2c71881/Screenshots/11%20-%20list%20new%20champions.png)
+
+4. Delete all the champions of the database :
+
+![delete champions](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/408a80b3e017089fb9e4006a037d6d67d2c71881/Screenshots/12%20-%20Delete%20all%20champions.png)
+
+5. After the last check it takes 5 seconds to check again and restore the database once it's detected.
+
+![list champions]()
+
+2. List all the initial champions:
+
+![list champions]()
