@@ -122,13 +122,46 @@ Then we go to the target folder and copy the jar file:
 
 ## Configuration
 
-Now we have all the files required to continue. The next step is to create a folder in your file explorer, in this example our route is the next one "".
+Now we have all the files required to continue. The next step is to create a folder in your file explorer, in this example our route is the next one "C:\WindowsServiceSpringboot".
 Here we paste our jar file and the downloaded files. As you can see there are more files, but they are generated once we configure and install the service. Initially we only have the 
 next ones:
 
 * `windows_service_spring.jar`
 * `WinSW.NET4.exe`
-* `GameControl` (originally it was sample-minimal.xml, but we need to rename the same as the exe)
+* `WinSW.NET4.xml` (originally it was sample-minimal.xml, but we need to rename it the same as the exe)
+
+![files required](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/809f0e99bf3e91353d31912ad24064423fd52eb4/Screenshots/4%20-%20files%20required.png)
+
+Open the WinSW.NET4.xml and configure the next tags this way using your id and your application data:
+
+![winsw config](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/809f0e99bf3e91353d31912ad24064423fd52eb4/Screenshots/5%20-%20winsw%20xml%20configuration.png)
+
+<br>
+
+## Installing the service
+
+Open cmd with admin permissions. Get to the folder we created and write the next command: `WinSW.NET4.exe install`
+
+Great! it was installed succesfully, we are almost done
+
+![install service](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/809f0e99bf3e91353d31912ad24064423fd52eb4/Screenshots/6%20-%20Installed%20service.png)
+
+<br>
+
+## Start the service
+
+Open Windows Services and localize your service, select it and click the start button:
+
+![windows service](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/809f0e99bf3e91353d31912ad24064423fd52eb4/Screenshots/7%20-%20Service%20start.png)
+
+Now it's running, well done
+
+![service running](https://github.com/CristopherLodbrok117/api-deployment-as-windows-service/blob/809f0e99bf3e91353d31912ad24064423fd52eb4/Screenshots/8%20-%20Service%20running.png)
+
+<br>
+
+## Testing the service
+
 
 
 ![Captura 1](the link here)
